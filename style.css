@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+}
+
+.transitions{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.content {
+    display: none;
+}
+
+p{
+    background-color: green;
+    transition:background-color 3 linear;
+}
+
+.content.active{
+    display: block;
+    
+}
+
+.content.active p{
+    background-color: yellow;
+    
+}
